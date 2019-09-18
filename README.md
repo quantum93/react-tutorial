@@ -29,7 +29,7 @@ const element = React.createElement(
   'Hello, world!'
 );
 
-and React.createElement creates object like this:
+and React.createElement creates object like this: // Note: this structure is simplified
 
 const element = {
   type: 'h1',
