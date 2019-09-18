@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const name = 'Josh Perez';
+const element = <h1> Hello, {name}</h1>
+
 ReactDOM.render(
-  <App />,
+  element,
+  // <App />,
   document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
