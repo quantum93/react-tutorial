@@ -17,12 +17,16 @@ const getGreeting = (user) => {
 }
 
 const user = { firstName: 'Harper', lastName:'Perez'};
+
 const element = (
   <div>
     <img src={'https://twt-thumbs.washtimes.com/media/image/2016/04/01/twins_nationals_baseball_c0-103-4776-2887_s885x516.jpeg?dc43a1c189d05de06314ef8906abac5257f733cb'} />
+    <h1>Hello!</h1>
     <h1>{getGreeting(user)}</h1>
-  </div>)
-
+    <h2>Good to see you here.</h2>
+    <hr/>
+  </div>
+);
 
 ReactDOM.render(
   element,
