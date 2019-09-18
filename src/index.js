@@ -14,7 +14,7 @@ class Welcome extends React.Component {
 }
 
 ReactDOM.render(
-  <Welcome />,
+  <Welcome name="Ben"/>,
   document.getElementById('root')
 );
 
