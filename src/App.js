@@ -1,11 +1,21 @@
-// import React from 'react';
-//
-// function App() {
-//   return (
-//     <div className="App">
-//         <h1>Hello, world!</h1>
-//     </div>
-//   );
+import React from 'react';
+
+// class Welcome extends React.Component {
+//   render() {
+//     return <h1>Hello, {this.props.name}</h1>;
+//   }
 // }
-//
-// export default App;
+
+function Welcome (props) { return <h1>Hello, {props.name}</h1>; }
+
+function App() {
+  return (
+    <div className="App">
+        <Welcome name="Sara"/>
+        <Welcome name="Ben"/>
+        <Welcome name="Josh"/>
+    </div>
+  );
+}
+
+export default App;
