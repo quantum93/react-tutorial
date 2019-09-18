@@ -9,10 +9,10 @@ const formatName = (user) => {
 
 const getGreeting = (user) => {
   if(user) {
-    return <h1>HELLO, {formatName(user)}!</h1>;
+    return 'HELLO', formatName(user);
   }
   else {
-    return <h1>Hello, Stranger.</h1>
+    return 'Hello, Stranger.'
   }
 }
 
