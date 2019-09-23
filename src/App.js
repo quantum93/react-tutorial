@@ -3,6 +3,7 @@ import Welcome from './Welcome';
 import Comment from './Comment';
 import Clock from './Clock';
 import Toggle from './Toggle';
+import Greeting from './Greeting';
 
 const comment = {
   date: new Date(),
@@ -34,6 +35,8 @@ function App() {
         <Clock />
         <hr/>
         <Toggle />
+        <hr/>
+        <Greeting isLoggedIn={false}/>
     </div>
   );
 }
