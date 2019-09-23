@@ -2,6 +2,7 @@ import React from 'react';
 import Welcome from './Welcome';
 import Comment from './Comment';
 import Clock from './Clock';
+import Toggle from './Toggle';
 
 const comment = {
   date: new Date(),
@@ -16,15 +17,23 @@ function App() {
   return (
     <div className="App">
         <Welcome name="Sara"/>
+        <hr/>
         <Welcome name="Ben"/>
+        <hr/>
         <Welcome name="Josh"/>
+        <hr/>
         <Comment
           date={comment.date}
           text={comment.text}
           author={comment.author}/>
+        <hr/>
         <Clock />
+        <hr/>
         <Clock />
+        <hr/>
         <Clock />
+        <hr/>
+        <Toggle />
     </div>
   );
 }
