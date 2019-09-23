@@ -6,6 +6,7 @@ import Toggle from './Toggle';
 import Greeting from './Greeting';
 import LoginControl from './LoginControl';
 import Mailbox from './Mailbox';
+import Page from './Page';
 
 const comment = {
   date: new Date(),
@@ -45,6 +46,8 @@ function App() {
         <LoginControl />
         <hr/>
         <Mailbox unreadMessages={messages} />
+        <hr/>
+        <Page />
     </div>
   );
 }
