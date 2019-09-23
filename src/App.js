@@ -7,6 +7,7 @@ import Greeting from './Greeting';
 import LoginControl from './LoginControl';
 import Mailbox from './Mailbox';
 import Page from './Page';
+import NumberList from './NumberList';
 
 const comment = {
   date: new Date(),
@@ -18,6 +19,8 @@ const comment = {
 };
 
 const messages = ['React', 'Re: React', 'Re:Re: React'];
+
+const numbers = [1, 2, 3, 4, 5];
 
 function App() {
   return (
@@ -48,6 +51,8 @@ function App() {
         <Mailbox unreadMessages={messages} />
         <hr/>
         <Page />
+        <hr/>
+        <NumberList numbers={numbers} />,
     </div>
   );
 }
