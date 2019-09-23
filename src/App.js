@@ -1,6 +1,7 @@
 import React from 'react';
 import Welcome from './Welcome';
 import Comment from './Comment';
+import Clock from './Clock';
 
 const comment = {
   date: new Date(),
@@ -21,6 +22,7 @@ function App() {
           date={comment.date}
           text={comment.text}
           author={comment.author}/>
+        <Clock />
     </div>
   );
 }
