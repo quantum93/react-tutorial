@@ -5,6 +5,7 @@ import Clock from './Clock';
 import Toggle from './Toggle';
 import Greeting from './Greeting';
 import LoginControl from './LoginControl';
+import Mailbox from './Mailbox';
 
 const comment = {
   date: new Date(),
@@ -14,6 +15,8 @@ const comment = {
     avatarUrl: 'https://placekitten.com/g/64/64',
   },
 };
+
+const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 function App() {
   return (
@@ -40,6 +43,8 @@ function App() {
         <Greeting isLoggedIn={false}/>
         <hr/>
         <LoginControl />
+        <hr/>
+        <Mailbox unreadMessages={messages} />
     </div>
   );
 }
