@@ -8,6 +8,7 @@ import LoginControl from './LoginControl';
 import Mailbox from './Mailbox';
 import Page from './Page';
 import NumberList from './NumberList';
+import Blog from './Blog';
 
 const comment = {
   date: new Date(),
@@ -21,6 +22,11 @@ const comment = {
 const messages = ['React', 'Re: React', 'Re:Re: React'];
 
 const numbers = [1, 2, 3, 4, 5];
+
+const posts = [
+  {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+  {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+];
 
 function App() {
   return (
@@ -52,7 +58,9 @@ function App() {
         <hr/>
         <Page />
         <hr/>
-        <NumberList numbers={numbers} />,
+        <NumberList numbers={numbers} />
+        <hr/>
+        <Blog posts={posts} />
     </div>
   );
 }
