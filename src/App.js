@@ -23,6 +23,8 @@ function App() {
           text={comment.text}
           author={comment.author}/>
         <Clock />
+        <Clock />
+        <Clock />
     </div>
   );
 }
