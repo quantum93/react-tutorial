@@ -11,6 +11,7 @@ import NumberList from './NumberList';
 import Blog from './Blog';
 import NameForm from './NameForm';
 import EssayForm from './EssayForm';
+import FlavorForm from './FlavorForm';
 
 const comment = {
   date: new Date(),
@@ -67,6 +68,8 @@ function App() {
         <NameForm />
         <hr/>
         <EssayForm />
+        <hr/>
+        <FlavorForm />
     </div>
   );
 }
