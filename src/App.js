@@ -13,6 +13,7 @@ import NameForm from './NameForm';
 import EssayForm from './EssayForm';
 import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
+import Calculator from './Calculator';
 
 const comment = {
   date: new Date(),
@@ -73,6 +74,8 @@ function App() {
         <FlavorForm />
         <hr/>
         <Reservation />
+        <hr/>
+        <Calculator />
     </div>
   );
 }
