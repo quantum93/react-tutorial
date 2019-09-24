@@ -9,6 +9,7 @@ import Mailbox from './Mailbox';
 import Page from './Page';
 import NumberList from './NumberList';
 import Blog from './Blog';
+import NameForm from './NameForm';
 
 const comment = {
   date: new Date(),
@@ -61,6 +62,8 @@ function App() {
         <NumberList numbers={numbers} />
         <hr/>
         <Blog posts={posts} />
+        <hr/>
+        <NameForm />
     </div>
   );
 }
